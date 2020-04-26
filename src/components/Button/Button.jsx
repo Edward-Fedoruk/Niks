@@ -1,11 +1,16 @@
 import React from 'react';
 import s from './styles.module.scss';
 
-const Button = (props) => (
+const MainButton = (props) => (
   <button className={s.mainButton}>
     {props.text}
-    {props.textSecond}
   </button>
 )
 
-export default Button;
+export const SideButton = (props) => (
+  <button className={s.sideButton}>
+    {props.text}
+  </button>
+)
+
+export default MainButton;
