@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Button from '../components/Button/Button';
+import MainButton from '../components/MainButton/MainButton';
+import SideButton from '../components/SideButton/SideButton';
 
 const Home = () => {
   return (
@@ -8,9 +9,12 @@ const Home = () => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Button text="Services" />
+      <SideButton text="Services" />
+      <SideButton text="Portfolio" />
+      <SideButton text="People" />
+      <MainButton text="Valuate Project" />
     </div>
   )
 }
 
-export default Home
+export default Home;
