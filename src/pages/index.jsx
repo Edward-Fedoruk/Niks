@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Button from '../components/Button/Button';
 
 const Home = () => (
   <div className="container">
@@ -8,7 +7,6 @@ const Home = () => (
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Button text="Services" />
   </div>
 );
 
