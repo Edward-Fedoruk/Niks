@@ -1,0 +1,112 @@
+$color-alpha: #233050;
+$color-beta: #00A8CC;
+$color-gamma: #0C7B93;
+$color-delta: #27496D;
+$color-epsilon: #142850;
+$color-zeta: #F39E50;
+$color-theta: #62D2EA;
+
+$font-family: 'Niks' Arial, Helvetica, sans-serif;
+
+// Breakpoints
+$desktop-width: 1920px;
+$laptop-width: 1440px;
+$tablet-width: 1024px;
+$small-tablet-width: 768px;
+$wide-mobile-width: 660px;
+$mobile-width: 375px;
+$small-mobile-width: 325px;
+
+// Media queries
+@mixin desktop {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin smallTablet {
+  @media (max-width: #{$small-tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$wide-mobile-width}) {
+    @content;
+  }
+}
+
+@mixin wideMobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin smallMobile {
+  @media (max-width: #{$small-mobile-width}) {
+    @content;
+  }
+}
+
+@mixin customBreakpoint($max-width) {
+  @media (max-width: #{$max-width}) {
+    @content;
+  }
+}
+
+// Font mixins
+@mixin h1($fw: bold) {
+  font-family: $font-family;
+  font-size: 80px;
+  font-weight: $fw;
+
+  @include tablet {
+    font-size: 40px;
+  }
+}
+
+@mixin h2 {
+  font-family: $font-family;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+@mixin h3 {
+  font-family: $font-family;
+  font-size: 30px;
+  font-weight: normal;
+
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+@mixin text($fw: bold) {
+  font-family: $font-family;
+  font-weight: $fw;
+  font-size: 14px;
+}
+
+@mixin button($fw: bold) {
+  font-family: $font-family;
+  font-weight: $fw;
+  font-size: 20px;
+}
+
+@mixin label {
+  font-family: $font-family;
+  font-weight: normal;
+  font-size: 16px;
+}
