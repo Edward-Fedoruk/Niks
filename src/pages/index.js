@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import MainButton from '../components/Button/Button';
-import {SideButton} from '../components/Button/Button';
+import MainButton from '../components/Button/MainButton';
+import SideButton from '../components/Button/SideButton';
 
 const Home = () => {
   return (
