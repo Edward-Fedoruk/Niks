@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import HomeTitle from '../components/HomeTitle/HomeTitle';
+import HomeSubtitle from '../components/HomeSubtitle/HomeSubtitle';
 
 const Home = () => (
   <div className="container">
@@ -9,6 +10,7 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <HomeTitle />
+    <HomeSubtitle />
   </div>
 );
 
