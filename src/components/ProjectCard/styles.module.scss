@@ -1,0 +1,29 @@
+@use '../../sass/globals.scss' as *;
+
+.projectCard {
+  max-width: 250px;
+  color: $color-white;
+  text-align: center;
+
+  &__heading {
+    @include h3();
+    margin: 26px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__description {
+    @include text(400);
+    line-height: 20px;
+  }
+  &__img {
+    margin: 0 auto;
+    height: 195px;
+    width: 195px;
+    border-radius: 50%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
