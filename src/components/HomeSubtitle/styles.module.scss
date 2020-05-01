@@ -1,0 +1,11 @@
+@use '../../sass/globals.scss' as *;
+
+.homeSubtitle {
+  background-color: #0C7B93;
+  color: white;
+  font-family: $font-family;
+  font-size: 30px;
+  line-height: 1.25;
+  padding-top: 20px;
+  width: 300px;
+}
