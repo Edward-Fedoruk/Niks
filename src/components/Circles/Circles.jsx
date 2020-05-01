@@ -16,9 +16,7 @@ const Circles = ({ config }) => {
     config: { ...config },
   }));
 
-  console.log(config);
-
-  const bind = useMove(({ xy: [px, py] }) => set({ xy: calc(px, py).reverse() }));
+  const bind = useMove(({ xy: [px, py] }) => set({ xy: calc(px, py).map((x) => x * -1) }));
 
   useEffect(() => {
     set({ config });
