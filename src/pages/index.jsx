@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+import MainButton from '../components/MainButton/MainButton';
+import SideButton from '../components/SideButton/SideButton';
 
 const Home = () => (
   <div className="container">
@@ -7,6 +9,10 @@ const Home = () => (
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
+    <SideButton text="Services" />
+    <SideButton text="Portfolio" />
+    <SideButton text="People" />
+    <MainButton text="Valuate Project" />
   </div>
 );
 
