@@ -16,6 +16,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  border-radius: 50%;
 }
 
 .first {
@@ -23,9 +24,7 @@
   width: 153.7vh;
   height: 153.7vh;
   left: 30vw;
-  border-radius: 50%;
   background-color: $color-beta;
-  z-index: 4;
 }
 
 .second {
@@ -33,9 +32,7 @@
   width: 100.9vh;
   height: 100.9vh;
   left: 26.1vw;
-  border-radius: 50%;
   background-color: $color-gamma;
-  z-index: 3;
 }
 
 .third {
@@ -43,9 +40,7 @@
   width: 128.7vh;
   height: 128.7vh;
   left: 24.2vw;
-  border-radius: 50%;
   background-color: $color-delta;
-  z-index: 2;
 }
 
 .forth {
@@ -53,7 +48,5 @@
   width: 200.9vh;
   height: 200.9vh;
   left: 21vw;
-  border-radius: 50%;
   background-color: $color-epsilon;
-  z-index: 1;
 }
