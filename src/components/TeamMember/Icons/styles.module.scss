@@ -1,0 +1,7 @@
+@use 'src/sass/globals' as *;
+
+.socialIcon {
+  &:hover path {
+    fill-opacity: 0.9;
+  }
+}
