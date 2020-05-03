@@ -1,0 +1,33 @@
+@use 'src/sass/globals' as *;
+
+.teamMember {
+  max-width: 180px;
+  color: $color-white;
+  text-align: center;
+
+  #{&}Avatar {
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  #{&}Name {
+    @include text(normal);
+    margin-top: 15px;
+    text-transform: uppercase;
+  }
+  #{&}Position {
+    @include text();
+    margin-top: 10px;
+  }
+  #{&}Socials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+}
