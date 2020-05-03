@@ -6,22 +6,28 @@ import LinkedInIcon from './Icons/LinkedInIcon/LinkedInIcon';
 import styles from './styles.module.scss';
 
 const TeamMember = ({
-  avatarUrl, name, position, facebookLogin, instagramLogin,
+  avatarUrl, name, position, facebookLogin, linkedInLogin, instagramLogin,
 }) => (
   <div className={styles.teamMember}>
-    <div className={styles.teamMember__avatar}><img src={`/images/members/${avatarUrl}`} alt="team member" /></div>
-    <h3 className={styles.teamMember__name}>{name}</h3>
-    <p className={styles.teamMember__position}>{position}</p>
-    <div className={styles.teamMember__socials}>
+    <div className={styles.teamMemberAvatar}><img src={`/images/members/${avatarUrl}`} alt="team member" /></div>
+    <h3 className={styles.teamMemberName}>{name}</h3>
+    <p className={styles.teamMemberPosition}>{position}</p>
+    <div className={styles.teamMemberSocials}>
+      {facebookLogin && (
       <a href={`https://facebook.com/${facebookLogin}`} target="_blank" rel="noopener noreferrer">
         <FacebookIcon />
       </a>
-      <a href="https://facebook.com/eduardsobotnyk" target="_blank" rel="noopener noreferrer">
+      )}
+      {linkedInLogin && (
+      <a href={`https://www.linkedin.com/in/${linkedInLogin}`} target="_blank" rel="noopener noreferrer">
         <LinkedInIcon />
       </a>
+      )}
+      {instagramLogin && (
       <a href={`https://www.instagram.com/${instagramLogin}`} target="_blank" rel="noopener noreferrer">
         <InstagramIcon />
       </a>
+      )}
     </div>
   </div>
 );
@@ -31,7 +37,7 @@ TeamMember.propTypes = {
   name: PropTypes.string.isRequired,
   position: PropTypes.string.isRequired,
   facebookLogin: PropTypes.string.isRequired,
-  // linkedInLogin: PropTypes.string.isRequired,
+  linkedInLogin: PropTypes.string.isRequired,
   instagramLogin: PropTypes.string.isRequired,
 };
 
