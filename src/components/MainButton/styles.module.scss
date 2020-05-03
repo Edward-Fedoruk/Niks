@@ -2,13 +2,10 @@
 
 .mainButton {
   background: $color-zeta;
-  border: none;
   border-radius: 9px;
-  box-shadow: none;
   color: white;
-  font-size: 20px;
+  @include button;
   outline: none;
-  margin: 0 10px;
   height: 56px;
   width: 206px;
 }

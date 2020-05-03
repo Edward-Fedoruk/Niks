@@ -2,14 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles.module.scss';
 
-const MainButton = ({ text }) => (
-  <button type="button" className={styles.mainButton}>
-    {text}
+const MainButton = ({ children, classes }) => (
+  <button
+    type="button"
+    className={`${styles.mainButton} ${classes}`}
+  >
+    {children}
   </button>
 );
 
 MainButton.propTypes = {
-  text: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  classes: PropTypes.string.isRequired,
 };
 
 export default MainButton;
