@@ -1,15 +1,10 @@
 @use '../../sass/globals.scss' as *;
 
 .homeTitle {
-  background-color: #0C7B93;
   color: white;
-  font-family: $font-family;
-  font-weight: normal;
-  font-size: 80px;
-  .homeTitleUppercase {
-    text-transform: uppercase;
-  }
-  .homeTitleBold {
-    font-weight: bold;
-  }
+  @include h1($fw: 400);
+}
+
+.mainButton {
+  margin-top: 70px;
 }

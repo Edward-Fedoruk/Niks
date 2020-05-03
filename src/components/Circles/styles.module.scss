@@ -1,0 +1,75 @@
+@use "../../sass/globals.scss" as *; 
+
+.circles {
+  position: absolute;
+  background-color: $color-alpha;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.first {
+  @extend .circle;
+  width: 153.7vh;
+  height: 153.7vh;
+  left: 30vw;
+  background-color: $color-beta;
+}
+
+.second {
+  @extend .circle;
+  width: 100.9vh;
+  height: 100.9vh;
+  left: 26.1vw;
+  background-color: $color-gamma;
+}
+
+.third {
+  @extend .circle;
+  width: 128.7vh;
+  height: 128.7vh;
+  left: 24.2vw;
+  background-color: $color-delta;
+}
+
+.forth {
+  @extend .circle;
+  width: 200.9vh;
+  height: 200.9vh;
+  left: 21vw;
+  background-color: $color-epsilon;
+}
+
+.titleWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13%;
+  transition: opacity ease-in 1s;
+}
+
+.title {
+  @include h1($fw: 400);
+  color: white;
+}
+
+.description {
+  @include h3;
+  margin-top: 21px;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
