@@ -101,8 +101,8 @@ const circlesTitle = [
 
 const circlesInitStyle = [
   {
-    width: '153.7vh',
-    height: '153.7vh',
+    width: '166.4vh',
+    height: '166.4vh',
     left: '30vw',
     zIndex: 4,
   },
