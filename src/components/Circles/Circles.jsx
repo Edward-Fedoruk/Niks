@@ -99,7 +99,7 @@ const circlesTitle = [
   ),
 ];
 
-const circlesInitStyle = [
+const circles = [
   {
     width: '166.4vh',
     height: '166.4vh',
@@ -127,13 +127,10 @@ const circlesInitStyle = [
 ];
 
 const Circles = () => {
-  const [circles] = useState(circlesInitStyle);
-
   const [slideI, setCIndex] = useState(0);
 
   const [wavesSpring, set] = useTrail(4, () => ({
     xy: [0, 0],
-    circlesPos: [1, 2, 3, 4],
     config: { mass: 8, tension: 55, friction: 20 },
   }));
 
