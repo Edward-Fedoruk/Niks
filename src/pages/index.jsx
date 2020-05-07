@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Circles from '../components/Circles/Circles';
+import HomePage from '../components/HomePage/HomePage';
 
 const Home = () => (
   <div className="container">
@@ -8,7 +8,7 @@ const Home = () => (
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Circles />
+    <HomePage />
   </div>
 );
 
