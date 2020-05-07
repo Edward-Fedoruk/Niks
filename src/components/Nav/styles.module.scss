@@ -8,6 +8,8 @@
   align-items: center;
   justify-content: center;
   transform: translateX(-40px);
+  z-index: 5;
+  position: relative;
 }
 
 .circleBtn {
