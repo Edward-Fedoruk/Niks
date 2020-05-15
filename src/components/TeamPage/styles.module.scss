@@ -1,0 +1,74 @@
+@use '../../sass/globals.scss' as *;
+.team {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: $color-alpha;
+}
+.teamWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.teamMember {
+  margin: 60px;
+
+  @include laptop {
+    margin: 40px;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+.mainCircle {
+  position: absolute;
+  left: 46vw;
+  height: 180vh;
+  width: 180vh;
+  background-color: $color-epsilon;
+  border-radius: 50%;
+  transform: translateY(-20%);
+  z-index: 1;
+}
+.secondaryCircle {
+  position: absolute;
+  left: 49vw;
+  height: 170vh;
+  width: 220vh;
+  background-color: $color-delta;
+  border-radius: 50%;
+  transform: translateY(-18%);
+  z-index: 1;
+}
+.container {
+  margin: auto;
+  z-index: 2;
+}
+.teamHeading {
+  @include h2();
+  margin-bottom: 26px;
+  color: $color-white;
+  font-weight: bold;
+}
+.teamDescription {
+  @include text();
+  margin-bottom: 20px;
+  color: $color-white;
+  line-height: 1.5;
+  font-weight: 300;
+}
