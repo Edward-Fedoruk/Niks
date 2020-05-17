@@ -7,4 +7,20 @@
 
 .mainButton {
   margin-top: 70px;
+
+  @include tablet {
+    margin-top: 37px;
+  }
+}
+
+.homeTitleWrap {
+  @include tablet {
+    position: absolute;
+    bottom: 79px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

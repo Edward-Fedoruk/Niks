@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
+import circleTitles from '../CircleTitles/CircleTitles';
 
 const circlesStyles = [
   styles.first,
@@ -10,8 +11,10 @@ const circlesStyles = [
 
 const CirclesMobile = () => (
   <div className={styles.circlesMobile}>
-    {circlesStyles.map((className) => (
-      <div className={className} />
+    {circlesStyles.map((className, i) => (
+      <div key={className} className={className}>
+        {circleTitles[i]}
+      </div>
     ))}
   </div>
 );

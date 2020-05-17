@@ -3,12 +3,21 @@
 .title {
   @include h1($fw: 400);
   color: white;
+
+  @include tablet {
+    text-align: center;
+  }
 }
 
 .description {
   @include h3;
   margin-top: 21px;
   color: white;
+
+  @include tablet {
+    text-align: center;
+    font-size: 25px;
+  }
 }
 
 .bold {

@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react';
 import { useTrail, animated } from 'react-spring';
 import styles from './styles.module.scss';
-import Logo from '../Logo/Logo';
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 
@@ -29,9 +28,6 @@ const Nav = () => {
 
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}>
-        <Logo />
-      </div>
       <div className={styles.buttonGroup}>
         {springs.map((sp, i) => (
           <animated.button
