@@ -1,55 +1,17 @@
 @use '../../sass/globals.scss' as *;
 
-.nav {
-  width: 160px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-  position: relative;
-}
-
-.buttonGroup {
-  transform: translateY(37px) translateX(-40px);
-}
-
-.circleBtn {
-  @include button;
-  color: #EDFCFF;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
-  left: 0;
-  transition: left ease-in .2s;
-  justify-content: center;
-
-  &:hover {
-   left: 30%; 
-   .btnText {
-     margin-left: 0 !important;
-   }
+.mobileNav {
+  display: none;
+  @include tablet {
+    display: block;
   }
 }
 
-.btnText {
-  transition: margin ease-in .2s;
-}
-
-.team {
-  @extend .circleBtn;
-  background-color: $color-delta;
-}
-
-.portfolio {
-  @extend .circleBtn;
-  background-color: $color-gamma;
-}
-
-.services {
-  @extend .circleBtn;
-  background-color: $color-beta;
+.desktopNav {
+  display: block;
+  height: 100%;
+  
+  @include tablet {
+    display: none;
+  }
 }

@@ -1,11 +1,9 @@
 import React from 'react';
-import Nav from '../Nav/Nav';
 import styles from './styles.module.scss';
 import TeamMember from '../TeamMember/TeamMember';
 
 const TeamPage = () => (
   <div className={styles.team}>
-    <Nav />
     <div className={styles.circles}>
       <div className={styles.mainCircle} />
       <div className={styles.secondaryCircle} />
