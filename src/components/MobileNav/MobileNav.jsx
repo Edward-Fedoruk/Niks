@@ -9,7 +9,7 @@ const routes = [
   { routeName: 'Home', route: '/' },
   { routeName: 'Services', route: '/services' },
   { routeName: 'Portfolio', route: '/portfolio' },
-  { routeName: 'People', route: '/people' },
+  { routeName: 'Team', route: '/team' },
 ];
 
 const MobileNav = () => {

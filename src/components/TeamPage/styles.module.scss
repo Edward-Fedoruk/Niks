@@ -2,7 +2,7 @@
 .team {
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $color-alpha;
 }
 .teamWrapper {
@@ -19,7 +19,7 @@
   }
 }
 .circles {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -36,6 +36,25 @@
   border-radius: 50%;
   transform: translateY(-20%);
   z-index: 1;
+
+  @include tablet {
+    left: -11vw;
+    height: 100%;
+    width: 120%;
+    transform: translateY(-34%);
+  }
+
+  @include smallTablet {
+    left: -1vw;
+    height: 83%;
+    width: 100%;
+  }
+
+  @include wideMobile {
+    left: -19vw;
+    height: 96%;
+    width: 134%;
+  }
 }
 .secondaryCircle {
   position: absolute;
@@ -46,10 +65,31 @@
   border-radius: 50%;
   transform: translateY(-18%);
   z-index: 1;
+
+  @include tablet {
+    left: 0;
+    height: 110%;
+    width: 90%;
+    transform: translate(5%, -43%);
+  }
+
+  @include smallTablet {
+    height: 90%;
+  }
+
+  @include wideMobile {
+    height: 120%;
+    width: 150%;
+    transform: translate(-18%, -51%);
+  }
 }
 .container {
   margin: auto;
   z-index: 2;
+
+  @include tablet {
+    margin-top: 130px;
+  }
 }
 .teamHeading {
   @include h2();
