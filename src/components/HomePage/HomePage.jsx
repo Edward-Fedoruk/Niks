@@ -2,13 +2,13 @@ import React from 'react';
 import Circles from '../Circles/Circles';
 import Nav from '../Nav/Nav';
 import styles from './styles.module.scss';
-import MobileNav from '../CirclesMobile/CirclesMobile';
+import CirclesMobile from '../CirclesMobile/CirclesMobile';
 
 const HomePage = () => (
   <div className={styles.home}>
-    <Nav />
+    {/* <Nav /> */}
     {/* <Circles /> */}
-    <MobileNav />
+    <CirclesMobile />
   </div>
 );
 
