@@ -1,0 +1,54 @@
+@use '../../sass/globals.scss' as *;
+
+.circlesMobile {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+
+.circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.first {
+  @extend .circle;
+  width: 1107px;
+  height: 1107px;
+  top: -535px;
+  z-index: 5;
+  background-color: $color-beta;
+}
+
+.second {
+  @extend .circle;
+  width: 727px;
+  height: 727px;
+  top: -117px;
+  z-index: 4;
+  background-color: $color-gamma;
+}
+
+.third {
+  @extend .circle;
+  width: 927px;
+  height: 927px;
+  top: -284px;
+  z-index: 3;
+  background-color: $color-delta;
+}
+
+.forth {
+  @extend .circle;
+  width: 1447px;
+  height: 1447px;
+  top: -770px;
+  z-index: 2;
+  background-color: $color-epsilon;
+}

@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import { animated, useTrail, useSprings } from 'react-spring';
 import { useMove } from 'react-use-gesture';
-import HomeTitle from '../HomeTitle/HomeTitle';
 import styles from './styles.module.scss';
+import circlesTitle from '../CircleTitles/CircleTitles';
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 
@@ -21,83 +21,6 @@ const circlesStyle = [
   styles.forth,
 ];
 
-const circlesTitle = [
-  (
-    <HomeTitle>
-      <>
-        <h1 className={styles.title}>
-          We are
-          <b className={styles.bold}>YOUR</b>
-          <br />
-          development
-          <br />
-          <b className={styles.bold}>TEAM</b>
-        </h1>
-        <p className={styles.description}>
-          creative.
-          <br />
-          flexible.
-          <br />
-          accessible.
-        </p>
-      </>
-    </HomeTitle>
-  ),
-  (
-    <HomeTitle>
-      <>
-        <h1 className={styles.title}>
-          We are
-          <br />
-          CREATIVE
-          <br />
-          <b className={styles.bold}>TEAM</b>
-        </h1>
-        <p className={styles.description}>
-          For custom solutions
-          <br />
-          to your problem.
-        </p>
-      </>
-    </HomeTitle>
-  ),
-  (
-    <HomeTitle>
-      <>
-        <h1 className={styles.title}>
-          We are
-          <br />
-          a FLEXIBLE
-          <br />
-          <b className={styles.bold}>TEAM</b>
-        </h1>
-        <p className={styles.description}>
-          Choose your interaction
-          <br />
-          mode and toolbox.
-        </p>
-      </>
-    </HomeTitle>
-  ),
-  (
-    <HomeTitle>
-      <>
-        <h1 className={styles.title}>
-          We are
-          <br />
-          an ACCESSIBLE
-          <br />
-          <b className={styles.bold}>TEAM</b>
-        </h1>
-        <p className={styles.description}>
-          Direct communication with
-          <br />
-          each team member.
-        </p>
-      </>
-    </HomeTitle>
-  ),
-];
 
 const circles = [
   {

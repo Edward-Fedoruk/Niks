@@ -19,7 +19,6 @@ const Logo = () => {
       }
     },
     config: { duration: 3000, precision: 0.1 },
-    reset: true,
   });
 
   return (
