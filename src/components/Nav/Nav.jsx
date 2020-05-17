@@ -1,6 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect } from 'react';
 import { useTrail, animated } from 'react-spring';
+import Link from 'next/link';
 import styles from './styles.module.scss';
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
@@ -11,9 +12,9 @@ const trans = (i) => (x, y) => `translate3d(
   0
 )`;
 const nav = [
-  { navName: 'Team', style: styles.team },
-  { navName: 'Portfolio', style: styles.portfolio },
-  { navName: 'Services', style: styles.services },
+  { navName: 'Team', style: styles.team, link: '/team' },
+  { navName: 'Portfolio', style: styles.portfolio, link: '/portfolio' },
+  { navName: 'Services', style: styles.services, link: '/services' },
 ];
 
 const Nav = () => {
@@ -30,25 +31,26 @@ const Nav = () => {
     <nav className={styles.nav}>
       <div className={styles.buttonGroup}>
         {springs.map((sp, i) => (
-          <animated.button
-            type="button"
-            key={i}
-            className={nav[i].style}
-            style={{
-              ...sp,
-              transform: sp.xy.interpolate(trans(i)),
-              width: 150 + i * 10,
-              height: 150 + i * 10,
-              zIndex: i,
-            }}
-          >
-            <span
-              className={styles.btnText}
-              style={{ marginLeft: 71 + i * 5 }}
+          <Link key={nav[i].link} href={nav[i].link}>
+            <animated.a
+              type="button"
+              className={nav[i].style}
+              style={{
+                ...sp,
+                transform: sp.xy.interpolate(trans(i)),
+                width: 150 + i * 10,
+                height: 150 + i * 10,
+                zIndex: i,
+              }}
             >
-              {nav[i].navName}
-            </span>
-          </animated.button>
+              <span
+                className={styles.btnText}
+                style={{ marginLeft: 71 + i * 5 }}
+              >
+                {nav[i].navName}
+              </span>
+            </animated.a>
+          </Link>
         ))}
       </div>
     </nav>
