@@ -24,6 +24,17 @@
   top: -535px;
   z-index: 5;
   background-color: $color-beta;
+
+  @include wideMobile {
+    width: calc(1107px - 100px);
+    height: calc(1107px - 100px);
+  }
+
+  @include mobile {
+    width: 632px;
+    height: 632px;
+    top: -140px;
+  }
 }
 
 .second {
@@ -33,6 +44,17 @@
   top: -117px;
   z-index: 4;
   background-color: $color-gamma;
+
+  @include wideMobile {
+    width: calc(727px - 100px);
+    height: calc(727px - 100px);
+  }
+
+  @include mobile {
+    width: 415px;
+    height: 415px;
+    top: 95px;
+  }
 }
 
 .third {
@@ -42,6 +64,17 @@
   top: -284px;
   z-index: 3;
   background-color: $color-delta;
+
+  @include wideMobile {
+    width: calc(927px - 100px);
+    height: calc(927px - 100px);
+  }
+
+  @include mobile {
+    width: 531px;
+    height: 531px;
+    top: 0px;
+  }
 }
 
 .forth {
@@ -51,4 +84,15 @@
   top: -770px;
   z-index: 2;
   background-color: $color-epsilon;
+
+  @include wideMobile {
+    width: calc(1447px - 100px);
+    height: calc(1447px - 100px);
+  }
+
+  @include mobile {
+    width: 828px;
+    height: 828px;
+    top: -270px;
+  }
 }
