@@ -57,18 +57,3 @@
   left: 13%;
   transition: opacity ease-in 1s;
 }
-
-.title {
-  @include h1($fw: 400);
-  color: white;
-}
-
-.description {
-  @include h3;
-  margin-top: 21px;
-  color: white;
-}
-
-.bold {
-  font-weight: bold;
-}
