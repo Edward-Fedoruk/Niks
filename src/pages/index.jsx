@@ -3,7 +3,7 @@ import Head from 'next/head';
 import HomePage from '../components/HomePage/HomePage';
 
 const Home = () => (
-  <div className="container">
+  <div>
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
