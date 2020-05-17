@@ -17,14 +17,6 @@
   @include laptop {
     margin: 40px;
   }
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 .circles {
   position: absolute;
@@ -71,4 +63,12 @@
   color: $color-white;
   line-height: 1.5;
   font-weight: 300;
+}
+.teamHeading,
+.teamDescription {
+  padding: 0 60px;
+
+  @include laptop {
+    padding: 0 40px;
+  }
 }
