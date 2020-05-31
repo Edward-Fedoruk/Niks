@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 .teamMember {
   margin: 60px;
@@ -38,22 +39,28 @@
   z-index: 1;
 
   @include tablet {
-    left: -11vw;
-    height: 100%;
+    left: -11.5vw;
+    height: 90vw;
     width: 120%;
-    transform: translateY(-34%);
+    transform: translateY(-33%);
   }
 
   @include smallTablet {
     left: -1vw;
-    height: 83%;
+    //height: 130vw;
     width: 100%;
   }
 
   @include wideMobile {
     left: -19vw;
-    height: 96%;
+    height: 130vw;
     width: 134%;
+  }
+
+  @include mobile {
+    left: -61vw;
+    height: 228vw;
+    width: 215%;
   }
 }
 .secondaryCircle {
@@ -68,19 +75,25 @@
 
   @include tablet {
     left: 0;
-    height: 110%;
-    width: 90%;
-    transform: translate(5%, -43%);
+    height: 103.3vw;
+    width: 110%;
+    transform: translate(-4.8%, -46%);
   }
 
-  @include smallTablet {
-    height: 90%;
-  }
+  //@include smallTablet {
+  //  height: 160vw;
+  //}
 
   @include wideMobile {
-    height: 120%;
+    height: 160vw;
     width: 150%;
     transform: translate(-18%, -51%);
+  }
+
+  @include mobile {
+    height: 290vw;
+    width: 290%;
+    transform: translate(-33.4%, -51%);
   }
 }
 .container {
