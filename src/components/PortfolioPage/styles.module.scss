@@ -1,0 +1,123 @@
+@use '../../sass/globals.scss' as *;
+.portfolio {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $color-alpha;
+}
+.portfolioWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+.circles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+.mainCircle {
+  position: absolute;
+  left: 56vw;
+  height: 180vh;
+  width: 180vh;
+  background-color: $color-epsilon;
+  border-radius: 50%;
+  transform: translateY(-20%);
+  z-index: 1;
+
+  @include tablet {
+    left: -11.5vw;
+    height: 90vw;
+    width: 120%;
+    transform: translateY(-33%);
+  }
+
+  @include smallTablet {
+    left: -1vw;
+    //height: 130vw;
+    width: 100%;
+  }
+
+  @include wideMobile {
+    left: -19vw;
+    height: 130vw;
+    width: 134%;
+  }
+
+  @include mobile {
+    left: -61vw;
+    height: 228vw;
+    width: 215%;
+  }
+}
+.secondaryCircle {
+  position: absolute;
+  left: 58vw;
+  height: 170vh;
+  width: 220vh;
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 50%;
+  transform: translateY(-18%);
+  z-index: 1;
+
+  @include tablet {
+    left: 0;
+    height: 103.3vw;
+    width: 110%;
+    transform: translate(-4.8%, -46%);
+  }
+
+  //@include smallTablet {
+  //  height: 160vw;
+  //}
+
+  @include wideMobile {
+    height: 160vw;
+    width: 150%;
+    transform: translate(-18%, -51%);
+  }
+
+  @include mobile {
+    height: 290vw;
+    width: 290%;
+    transform: translate(-33.4%, -51%);
+  }
+}
+.container {
+  margin: 0 200px;
+  z-index: 2;
+
+  @include tablet {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.portfolioHeading {
+  @include h2();
+  margin-bottom: 26px;
+  color: $color-white;
+  font-weight: bold;
+}
+.portfolioDescription {
+  @include subheading();
+  margin-bottom: 20px;
+  color: $color-white;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.portfolioHeading,
+.portfolioDescription {
+  padding: 0 60px;
+
+  @include laptop {
+    padding: 0 40px;
+  }
+}
